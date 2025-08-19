@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我的個人網站 · GitHub Pages 範例</title>
+    <meta name="description" content="這是一個超簡單的個人網站範例，可以直接放到 GitHub Pages。">
+    <meta property="og:title" content="我的個人網站" />
+    <meta property="og:description" content="超簡單 GitHub Pages 入門範例" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>你的名字</h1>
+        <nav>
+          <a href="#about">關於</a>
+          <a href="#projects">作品</a>
+          <a href="#contact">聯絡</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <h2>哈囉！我是 <span class="brand">你的名字</span> 👋</h2>
+        <p>這是使用 <strong>GitHub Pages</strong> 架設的超簡單個人網站範例。你可以把這個專案直接上傳到 GitHub，馬上擁有自己的網站。</p>
+        <p class="cta-wrap">
+          <a class="btn" href="#projects">看看範例作品</a>
+          <a class="btn ghost" href="#contact">聯絡我</a>
+        </p>
+      </section>
+
+      <section id="about" class="section container">
+        <h3>關於我</h3>
+        <p>在這裡寫一段簡短自我介紹：你是誰、擅長什麼、目前目標是什麼。也可以貼上你的 LinkedIn、Instagram 或其他連結。</p>
+        <ul class="links">
+          <li>📄 <a href="#">我的履歷</a></li>
+          <li>💼 <a href="#">LinkedIn</a></li>
+          <li>📝 <a href="#">部落格</a></li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section container">
+        <h3>作品 / 專案</h3>
+        <div class="grid">
+          <article class="card">
+            <h4>作品 A</h4>
+            <p>寫一段作品 A 的簡介與你做了什麼、用了哪些技能或工具。</p>
+            <a class="card-link" href="#">查看作品</a>
+          </article>
+          <article class="card">
+            <h4>作品 B</h4>
+            <p>寫一段作品 B 的簡介與你做了什麼、用了哪些技能或工具。</p>
+            <a class="card-link" href="#">查看作品</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <h3>聯絡我</h3>
+        <p>歡迎來信交流合作或聊聊想法：</p>
+        <p class="email"><a href="mailto:you@example.com">you@example.com</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> 你的名字 · 以 GitHub Pages 建置</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+/* 超簡單、可讀性高的樣式 */
+:root {
+  --bg: #0b0c10;
+  --panel: #111317;
+  --muted: #9aa1a9;
+  --text: #e6e6e6;
+  --brand: #4da3ff;
+  --accent: #66e0a3;
+  --border: #1b1f24;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; line-height: 1.6; }
+
+.container { width: min(100%, 1000px); margin: 0 auto; padding: 0 20px; }
+
+.site-header { position: sticky; top: 0; z-index: 10; background: rgba(11,12,16,0.8); backdrop-filter: blur(6px); border-bottom: 1px solid var(--border); }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; }
+.site-header h1 { font-size: 18px; margin: 0; color: var(--text); }
+.site-header nav a { color: var(--muted); text-decoration: none; margin-left: 16px; }
+.site-header nav a:hover { color: var(--text); }
+
+.hero { padding: 60px 20px 40px; }
+.hero h2 { font-size: clamp(28px, 6vw, 40px); margin: 0 0 8px; }
+.brand { color: var(--brand); }
+.cta-wrap { margin-top: 12px; }
+.btn { display: inline-block; padding: 10px 14px; border-radius: 10px; background: var(--brand); color: #071019; text-decoration: none; font-weight: 600; margin-right: 8px; }
+.btn.ghost { background: transparent; border: 1px solid var(--brand); color: var(--text); }
+
+.section { padding: 28px 0; }
+.section h3 { font-size: 22px; margin-top: 0; }
+.links { padding-left: 18px; }
+.links a { color: var(--accent); text-decoration: none; }
+.links a:hover { text-decoration: underline; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+.card h4 { margin: 0 0 8px; }
+.card-link { display: inline-block; margin-top: 8px; color: var(--brand); text-decoration: none; }
+.card-link:hover { text-decoration: underline; }
+
+.email a { font-weight: 600; color: var(--brand); text-decoration: none; }
+.email a:hover { text-decoration: underline; }
+
+.site-footer { border-top: 1px solid var(--border); margin-top: 40px; }
+.site-footer .container { padding: 18px 20px; text-align: center; color: var(--muted); }
