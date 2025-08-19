@@ -1,33 +1,25 @@
-# GitHub Pages 超簡單入門範例
+# Gallery 相簿（GitHub Pages）
 
-這個資料夾包含：
+把照片放進 `/images/`，這個頁面會 **自動** 顯示所有圖片（不需手動改 HTML）。
+此做法使用 GitHub 公開 API 讀取檔案清單，因此 Repository 需要設為 **Public**。
 
-- `index.html` — 首頁
-- `style.css` — 簡單樣式
-- （可選）之後你可以新增圖片、其他頁面
+## 使用方式
+1. 將 `gallery.html`、`gallery.css`、`gallery.js` 放在你的 GitHub Pages 專案根目錄。
+2. 在專案根目錄建立 `images/` 資料夾，將 `.jpg/.png/.webp/.avif/.gif` 等圖片放入。
+3. 確保專案是 Public，且 Pages 已啟用。
+4. 打開 `https://你的帳號.github.io/你的repo名/gallery.html`（若是個人主站則是 `https://你的帳號.github.io/gallery.html`）。
 
-## 快速上線（使用 GitHub 網頁介面）
+## 為什麼可以自動顯示？
+`gallery.js` 會：
+- 從當前網址推斷使用者名稱與 Repository 名稱
+- 呼叫 GitHub API 取得 `/images/` 下的檔案清單
+- 依副檔名篩選圖片並動態插入頁面
 
-1. 到 GitHub 建立一個新資料庫（Repository）。如果你想做「個人主頁」，名稱必須是：`你的使用者名稱.github.io`（例：`octocat.github.io`）。
-2. 進入該資料庫後，點 **Add file → Upload files**，把這個資料夾中的所有檔案上傳，然後 **Commit changes**。
-3. 到 **Settings → Pages**：
-   - **Source** 選 **Deploy from a branch**
-   - **Branch** 選 `main`，**資料夾**選 `/ (root)`，按 **Save**
-4. GitHub 會自動部署。你的網站網址：
-   - 若資料庫名稱是 `你的使用者名稱.github.io`：網址就是 `https://你的使用者名稱.github.io`
-   - 否則：`https://你的使用者名稱.github.io/你的資料庫名稱`
+> 注意：若你的預設分支不是 `main`，程式會自動偵測 `default_branch`（例如 `master`）。
 
-> 看到 404？請確認你已經上傳並 **Commit** 了 `index.html`，且 Pages 設定為 `main` 分支的根目錄。
-
-## 客製化
-
-- 打開 `index.html`，把「你的名字」、「you@example.com」等字樣改成自己的資訊。
-- 想換色？修改 `style.css` 最上方的色票變數。
-- 想新增作品卡片？複製 `<article class="card">...</article>` 那段貼上再改內容即可。
-
-## 自訂網域（選用）
-
-1. 在 DNS 設定新增 CNAME 指向 `你的使用者名稱.github.io`
-2. 在 GitHub 的 **Settings → Pages → Custom domain** 填入你的網域；GitHub 會提示 DNS 紀錄設定是否正確。
-
-祝順利上線！
+## 常見問題
+- 看不到圖片：
+  - Repository 必須是 **Public**
+  - 確認已建立 `/images/` 並放入圖片
+  - 等待 Pages 部署完成後再重整
+- 想要自訂說明文字：請把檔名命名為 `2024-taipei-101.jpg`，頁面會用檔名當作標題（可自行改 `gallery.js` 轉換邏輯）。
