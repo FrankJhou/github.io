@@ -1,9 +1,9 @@
 /* Base styles */
 :root {
-  --bg: #e6e6e6;
-  --panel: #66e0a3;
+  --bg: #0b0c10;
+  --panel: #111317;
   --muted: #9aa1a9;
-  --text: #0b0c10;
+  --text: #e6e6e6;
   --brand: #4da3ff;
   --accent: #66e0a3;
   --border: #1b1f24;
