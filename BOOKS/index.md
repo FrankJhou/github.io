@@ -4,5 +4,5 @@
 
 ## 2025
 - [Empire of AI @2025-08-21](Empire_of_AI.md)
-- [Atomic Habits @2025-08-20](Empire_of_AI.md)
-- [Thinking Fast and Slow @2025-08-19](Empire_of_AI.md)
+- [Atomic Habits @2025-08-20](AtomicHabits.md)
+- [Thinking Fast and Slow @2025-08-19](ThinkingFastandSlow.md)
