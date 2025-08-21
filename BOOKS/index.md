@@ -5,4 +5,4 @@
 ## 2025
 - [Empire of AI @2025-08-21](Empire_of_AI.md)
 - [Empire of AI @2025-08-21](Empire_of_AI.md)
--- [Empire of AI @2025-08-21](Empire_of_AI.md)
+- [Empire of AI @2025-08-21](Empire_of_AI.md)
