@@ -2,6 +2,7 @@
 
 > 這裡是每日一本書的內容摘要索引，以推薦序的方式書寫。
 ## 2025
+- [Surrounded by Idiots @2025-08-27](Surrounded_by_Idiots.md)
 - [The Psychology of Money @2025-08-26](The_Psychology_of_Money.md)
 - [The Let Them Theoty @2025-08-25](The_Let_Them_Theory.md)
 - [The Latte Factor @2025-08-22](The_Latte_Factor.md)
