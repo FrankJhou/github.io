@@ -3,7 +3,7 @@
 > 這裡是我的每日美國股市摘要日誌索引。來自 Reuters、Barron’s、MarketWatch、Bloomberg/Reuters、Yahoo Finance、Finviz、TradingView、Seeking Alpha、StockTwits 等多家資訊平台，最新的放最上面。
 
 ## 2025
-
+- [2025-08-27](2025-08-27.md)
 - [2025-08-26](2025-08-26.md)
 - [2025-08-25](2025-08-25.md)
 - [2025-08-23](2025-08-23.md)
