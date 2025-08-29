@@ -2,6 +2,7 @@
 
 > 這裡是每日一本書的內容摘要索引，以推薦序的方式書寫。
 ## 2025
+- [The Laws of Human Nature @2025-08-29](The_Laws_of_Human_Nature.md)
 - [Master Your Emotions @2025-08-28](Master_Your_Emotions.md)
 - [Surrounded by Idiots @2025-08-27](Surrounded_by_Idiots.md)
 - [The Psychology of Money @2025-08-26](The_Psychology_of_Money.md)
